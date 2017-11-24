@@ -1,0 +1,47 @@
+randomstate=42 test_size = 0.3 max_depth = default = None
+
+precision    recall  f1-score   support
+
+not_recom       1.00      1.00      1.00      1320
+priority       0.99      1.00      1.00      1272
+recommend       0.00      0.00      0.00         2
+spec_prior       1.00      0.99      1.00      1190
+very_recom       0.98      1.00      0.99       104
+
+avg / total       1.00      1.00      1.00      3888
+
+[[1320    0    0    0    0]
+ [   0 1269    0    3    0]
+ [   0    0    0    0    2]
+ [   0    8    0 1182    0]
+ [   0    0    0    0  104]]
+
+randomstate = 101 test_size = 0.5 max_depth = default = None
+
+precision    recall  f1-score   support
+
+not_recom       1.00      1.00      1.00      2202
+priority       0.99      0.99      0.99      2074
+recommend       1.00      1.00      1.00         1
+spec_prior       0.99      0.99      0.99      2037
+very_recom       0.99      0.99      0.99       166
+
+avg / total       0.99      0.99      0.99      6480
+
+[[2202    0    0    0    0]
+ [   0 2050    0   23    1]
+ [   0    0    1    0    0]
+ [   0   28    0 2009    0]
+ [   0    1    0    0  165]]
+
+ randomstate = 101 test_size = 0.5 max_depth = 5
+
+ precision    recall  f1-score   support
+
+not_recom       1.00      1.00      1.00      2202
+priority       0.81      0.84      0.82      2074
+recommend       0.00      0.00      0.00         1
+spec_prior       0.84      0.88      0.86      2037
+very_recom       0.00      0.00      0.00       166
+
+avg / total       0.86      0.89      0.87      6480
